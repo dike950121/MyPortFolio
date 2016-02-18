@@ -1,16 +1,14 @@
-#jekyll-bootstrap-sass
+#Seera Networks Inc.
 
-This is a boilerplate project for Jekyll, which is bundled with bootstrap-sass.
+This is the official site for Seera Networks.
 
-Using this project will give you:
+Technologies used:
 
-* Default template for static blogging with [Jekyll](http://jekyllrb.com/ "Jekyll").
+* [Jekyll](http://jekyllrb.com/ "Jekyll").
 * Bootstrap framework via [bootstrap-sass](https://github.com/twbs/bootstrap-sass/ "Twitter Bootstrap") 3.3.5
 * Sensible website defaults from [html5boilerplate](https://html5boilerplate.com/ "HTML5 Boilerplate") 5.2.0
 * [Modernizr](http://modernizr.com/ "Modernizr") 2.8.3
 * [jQuery](https://jquery.com/ "jQuery") 1.11.3
-* Google Analytics code snippet
-
 
 ## Prerequisites
 
@@ -18,8 +16,8 @@ You will need to have [Jekyll](http://jekyllrb.com/ "Jekyll") installed to utili
 
 ## How to run locally
 
-1. Clone this repository: git clone https://github.com/irmbrady/jekyll-bootstrap-sass.git
-2. Go into the directory: cd jekyll-bootstrap-sass
+1. Clone this repository: git clone https://github.com/StellaPrice/seera.git
+2. Go into the directory: cd seera
 3. Run Jekyll: jekyll serve
 4. Open your browser and navigate to: http://localhost:4000
 
@@ -28,8 +26,6 @@ You will need to have [Jekyll](http://jekyllrb.com/ "Jekyll") installed to utili
 Add custom Bootstrap variables to `/_sass/bootstrap/_bootstrap-custom-variables.scss`.
 
 Any custom SCSS partials should be added to the `_sass` folder, as they will be compiled by Jekyll when serving. These partials must be imported in `/stylesheets/main.scss`.
-
-Update your Google Analytics tracker ID in `/_layouts/defaults.html`.
 
 ## Deployment
 

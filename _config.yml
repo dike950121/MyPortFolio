@@ -16,9 +16,6 @@ markdown: kramdown
 # Pretty URL
 permalink: "posts/:title"
 
-# Custom categories
-categories: [navbar]
-
 # Collections
 collections:
   partners:
@@ -32,7 +29,7 @@ defaults:
       path: ""
       type: "categories"
     values:
-      layout: "page"
+      layout: "category"
 
 sass:
     style: :compressed

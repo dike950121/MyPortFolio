@@ -10,7 +10,12 @@
   "syntax-highlighting"
 ;
 
-// custom styles
+// module styles
+@import
+  "accordion"
+;
+
+// site styles
 @import
   "layout",
   "sidebar"

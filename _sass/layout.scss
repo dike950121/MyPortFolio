@@ -1,21 +1,32 @@
 body{
-  overflow: hidden;
+  background: $brand-primary url("/images/bg-logo.png") bottom right no-repeat;
+  min-height: 100vh;
 }
 
 .main{
   color: $white;
-  height: 100vh;
   overflow-y: auto;
-  padding-top: 10px;
-  background: $brand-primary url("/images/bg-logo.png") bottom right no-repeat;
 
   h1{
     background-color: rgba($white, 0.2);
     padding: 20px;
     margin-bottom: 20px;
     margin-left: -15px;
-    display: inline-block;
+    margin-right: -15px;
     font-size: 3em;
     text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+
+    @media(min-width: $screen-sm){
+      display: inline-block;
+      margin-right: auto;
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+
+  footer{
+    margin: 40px 0;
   }
 }
