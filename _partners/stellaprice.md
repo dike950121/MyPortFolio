@@ -1,6 +1,6 @@
 ---
 title: Stella Price and Associates
-category: "Real Estate"
+category: realestate
 image_path: ""
 active: true
 ---
