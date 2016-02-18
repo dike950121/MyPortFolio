@@ -3,8 +3,6 @@
 }
 
 .sidebar-left-inner{
-  padding: 20px 0;
-
   @media(min-width: $screen-sm){
     height: 100vh;
   }
@@ -55,7 +53,7 @@
       }
 
       &.active{
-        a{
+        > a{
           color: $brand-primary;
           font-weight: 600;
         }

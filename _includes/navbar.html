@@ -9,12 +9,12 @@
 <ul class="nav">
   <li {% if page.url == "/" %}class="active"{% endif %}><a href="/">Our story</a></li>
 
-  <li id="accordion">
-    <a class="accordion-toggle" href="#">Partner networks</a>
-    <div class="accordion-content default">
+  <li id="accordion" {% if page.layout == 'category' %}class="active"{% endif %}>
+    <a class="accordion-toggle" href="javascript:void(0);">Partner networks</a>
+    <div class="accordion-content {% if page.layout == 'category' %}active{% endif %}">
       <ul>
         {% for category in site.categories %}
-          <li><a href="/categories/{{ category.title | downcase | replace:" ","" }}">{{ category.title }}</a></li>
+          <li {% if category.title == page.title %}class="active"{% endif %}><a href="/categories/{{ category.title | downcase | replace:" ","" }}">{{ category.title }}</a></li>
         {% endfor %}
       </ul>
     </div>

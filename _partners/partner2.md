@@ -1,6 +1,6 @@
 ---
 active: true
-title: Stella Price and Associates
+title: Partner2
 category: realestate
 image_path: ""
 subcategory: Agent

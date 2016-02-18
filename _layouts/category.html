@@ -6,13 +6,13 @@ layout: default
 
 {{ content }}
 
-{% for partner in site.partners %}
-  {% assign pageCategory = page.title | downcase | replace:" ","" %}
-  {% if partner.category == pageCategory %}
-  <div class="col-lg-3 col-md-6 text-center">
-    <img src="{{ partner.image_path }}" alt="{{ partner.title }}"/>
-    <h3>{{ partner.title }}</h3>
-    <p class="text-muted">{{ partner.content }}</p>
-  </div>
-  {% endif %}
+{% assign pageCategory = page.title | downcase | replace:" ","" %}
+{% assign collection = site.partners | where:'category', pageCategory | group_by: "subcategory" %}
+{% for group in collection %}
+  <h3>{{ group.name }}</h3>
+  <ul>
+    {% for item in group.items %}
+    <li>{{ item.title }}</li>
+    {% endfor %}
+  </ul>
 {% endfor %}
