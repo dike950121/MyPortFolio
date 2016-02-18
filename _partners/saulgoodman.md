@@ -1,6 +1,6 @@
 ---
 title: Saul Goodman
-category: "Legal"
+category: legal
 image_path: ""
 active: true
 ---
