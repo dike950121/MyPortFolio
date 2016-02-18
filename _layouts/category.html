@@ -7,7 +7,8 @@ layout: default
 {{ content }}
 
 {% for partner in site.partners %}
-  {% if partner.category == page.title | downcase | replace:" ","" %}
+  {% assign pageCategory = page.title | downcase | replace:" ","" %}
+  {% if partner.category == pageCategory %}
   <div class="col-lg-3 col-md-6 text-center">
     <img src="{{ partner.image_path }}" alt="{{ partner.title }}"/>
     <h3>{{ partner.title }}</h3>
