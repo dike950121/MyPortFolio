@@ -1,6 +1,7 @@
 ---
 title: Klik
-category: realestate
+category: legal
 image_path: ''
 active: true
 ---
+
