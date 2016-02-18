@@ -1,6 +1,7 @@
 ---
 title: Ian
-category: Legal
+category: realestate
 image_path: ''
 active: true
 ---
+
