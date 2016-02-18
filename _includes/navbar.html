@@ -1,0 +1,23 @@
+<aside class="sidebar-left">
+  <a href="/">
+    <header class="logo">
+      <h1>SEERA</h1>
+      <h2>The art of networking</h2>
+    </header>
+  </a>
+
+<ul class="nav">
+  {% assign pages_list = site.pages | sort:"weight" %}
+  {% assign group = 'navigation' %}
+  {% include pages_list.html %}
+</ul>
+
+  <!-- <ul class="nav">
+    <li class="active"><a href="/">Home</a></li>
+    {% for page in site.pages %}
+      {% if page.title  and page.categories contains 'navbar' %}
+        <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul> -->
+</aside>

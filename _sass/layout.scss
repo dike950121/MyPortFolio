@@ -1,0 +1,21 @@
+body{
+  overflow: hidden;
+}
+
+.main{
+  color: $white;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 10px;
+  background: $brand-primary url("/images/bg-logo.png") bottom right no-repeat;
+
+  h1{
+    background-color: rgba($white, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    display: inline-block;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+}
