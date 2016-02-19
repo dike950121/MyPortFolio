@@ -10,9 +10,37 @@ layout: default
 {% assign collection = site.partners | where:'category', pageCategory | group_by: "subcategory" %}
 {% for group in collection %}
   <h3>{{ group.name }}</h3>
-  <ul>
+  <ul class="partner-category-group">
     {% for item in group.items %}
-    <li>{{ item.title }}</li>
+    <a href="{{ item.website }}" target="_blank">
+      <li class="partner" style="background-color: {{ item.color }}">
+        <div class="row">
+          <div class="col-xs-8">
+            <h3 class="partner-title">{{ item.title }}</h3>
+            <div class="partner-details">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>{{ item.address }}</li>
+                    <li>{{ item.website }}</li>
+                    <li>Specialty: Home appraisals</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>Client size: Medium</li>
+                    <li>Pricing: $$</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <q>These guys were the best to deal with. Ever.</q>
+          </div>
+        </div>
+      </li>
+    </a>
     {% endfor %}
   </ul>
 {% endfor %}

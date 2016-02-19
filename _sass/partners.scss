@@ -1,0 +1,26 @@
+.partner-category-group{
+  list-style-type: none;
+  padding: 0;
+
+  a{
+    color: $white;
+  }
+
+  .partner{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+
+    .partner-title{
+      margin: 0 0 10px;
+    }
+
+    .partner-details{
+      ul{
+        list-style-type: none;
+        padding: 0;
+      }
+    }
+  }
+}
