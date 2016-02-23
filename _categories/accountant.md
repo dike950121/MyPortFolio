@@ -1,4 +1,5 @@
 ---
 title: Accountant
-category: legal
+category: business
 ---
+
