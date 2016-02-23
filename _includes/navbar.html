@@ -19,20 +19,20 @@
       <a class="accordion-toggle{% if page.layout == 'category' %} active{% endif %}" href="javascript:void(0);">Networking partners <span class="chevron"></span></a>
       <div class="accordion-content {% if page.layout == 'category' %}active{% endif %}">
         <ul>
-          {% assign categories = site.categories | where:'parent', '' %}
+          {% assign categories = site.categories | where:'category', '' %}
           {% for category in categories %}
 
             {% assign categoryTitle = category.title | downcase | replace:" ","" %}
 
-            {% assign subcategories = site.categories | where:'parent',categoryTitle %}
+            {% assign subcategories = site.categories | where:'category',categoryTitle %}
             {% if subcategories.size > 0 %}
               {% assign hasSubcategories = true %}
             {% endif %}
 
             <li {% if hasSubcategories %}class="accordion"{% endif %}{% if category.title == page.title %}class="active"{% endif %}>
-              <a {% if hasSubcategories %}class="accordion-toggle{% if page.parent == categoryTitle %} active{% endif %}"{% else %}href="/categories/{{ categoryTitle }}"{% endif %}>{{ category.title }} <span class="chevron"></span></a>
-              <ul class="accordion-content {% if page.parent == categoryTitle %}active{% endif %}">
-                {% assign subcategories = site.categories | where:'parent', categoryTitle %}
+              <a {% if hasSubcategories %}class="accordion-toggle{% if page.category == categoryTitle %} active{% endif %}"{% else %}href="/categories/{{ categoryTitle }}"{% endif %}>{{ category.title }} <span class="chevron"></span></a>
+              <ul class="accordion-content {% if page.category == categoryTitle %}active{% endif %}">
+                {% assign subcategories = site.categories | where:'category', categoryTitle %}
                 {% for subcategory in subcategories  %}
                   <li {% if subcategory.title == page.title %}class="active"{% endif %}><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
                 {% endfor %}
