@@ -1,4 +1,5 @@
 ---
 title: Business
-parent: legal
+parent: ''
 ---
+
