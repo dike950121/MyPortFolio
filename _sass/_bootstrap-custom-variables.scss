@@ -8,3 +8,17 @@ $brand-primary: #b1610c;
 $font-family-sans-serif:  'Open Sans', Arial, sans-serif;
 $font-size-base: 16px;
 $link-hover-decoration: none;
+$border-radius-base: 0;
+$border-radius-large: 0;
+$nav-link-hover-bg: #f8f8f8;
+
+// Inputs
+$input-bg: rgba($white, 0.3);
+$input-border: transparent;
+$input-color: $white;
+$input-color-placeholder: darken($white, 20%);
+
+// Buttons
+$btn-default-color: $white;
+$btn-default-bg: rgba($white, 0.3);
+$btn-default-border: transparent;

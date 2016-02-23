@@ -1,3 +1,19 @@
-.accordion-toggle {cursor: pointer;}
+.accordion-toggle {
+  cursor: pointer;
+
+  .chevron:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    width: 20px;
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  &.active{
+    .chevron:before{
+      content: "\f107";
+    }
+  }
+}
 .accordion-content {display: none;}
 .accordion-content.active {display: block;}

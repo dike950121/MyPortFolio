@@ -1,11 +1,33 @@
+@import "bootstrap/_variables";
+
+
+@media(min-width: 1400px){
+  body{
+    // font-size: 22px;
+  }
+}
+
+.main-wrapper{
+  a{
+    color: $white;
+  }
+}
+
+// helpers
+.uc{
+  text-transform: uppercase;
+}
+
+// quotes
 q {
-    display: inline;
+  display: inline;
 }
 
-q:before {
-    content: open-quote;
+q:before,
+blockquote:before {
+  content: open-quote;
 }
-
-q:after {
-    content: close-quote;
+q:after,
+blockquote:after {
+  content: no-close-quote;
 }

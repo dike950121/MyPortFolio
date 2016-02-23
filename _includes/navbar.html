@@ -1,27 +1,43 @@
 <aside class="sidebar-left-inner">
-  <a href="/">
-    <header class="logo">
-      <h1>SEERA</h1>
-      <h2>The art of networking</h2>
+    <header>
+      <div class="row">
+        <a href="/">
+          <div class="col-xs-8 col-sm-12 logo">
+            <h1>SEERA</h1>
+            <h2>The art of networking</h2>
+          </div>
+        </a>
+        <div class="col-xs-4 visible-xs text-right">
+          <a href="javascript:void(0)" class="mobile-nav"><i class="fa fa-bars"></i></a>
+        </div>
     </header>
-  </a>
 
-<ul class="nav">
-  <li {% if page.url == "/" %}class="active"{% endif %}><a href="/">Our story</a></li>
+  <ul class="nav">
+    <li {% if page.url == "/" %}class="active"{% endif %}><a href="/">Our story</a></li>
 
-  <li id="accordion" {% if page.layout == 'category' %}class="active"{% endif %}>
-    <a class="accordion-toggle" href="javascript:void(0);">Partner networks</a>
-    <div class="accordion-content {% if page.layout == 'category' %}active{% endif %}">
-      <ul>
-        {% for category in site.categories %}
-          <li {% if category.title == page.title %}class="active"{% endif %}><a href="/categories/{{ category.title | downcase | replace:" ","" }}">{{ category.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </li>
+    <li class="accordion" {% if page.layout == 'category' %}class="active"{% endif %}>
+      <a class="accordion-toggle{% if page.layout == 'category' %} active{% endif %}" href="javascript:void(0);">Networking partners <span class="chevron"></span></a>
+      <div class="accordion-content {% if page.layout == 'category' %}active{% endif %}">
+        <ul>
+          {% assign categories = site.categories | where:'parent', '' %}
+          {% for category in categories %}
+            {% assign categoryTitle = category.title | downcase | replace:" ","" %}
+            <li {% if category.subcategories %}class="accordion"{% endif %}{% if category.title == page.title %}class="active"{% endif %}>
+              <a {% if category.subcategories %}class="accordion-toggle{% if page.parent == categoryTitle %} active{% endif %}"{% else %}href="/categories/{{ categoryTitle }}"{% endif %}>{{ category.title }} <span class="chevron"></span></a>
+              <ul class="accordion-content {% if page.parent == categoryTitle %}active{% endif %}">
+                {% assign subcategories = site.categories | where:'parent', categoryTitle %}
+                {% for subcategory in subcategories  %}
+                  <li {% if subcategory.title == page.title %}class="active"{% endif %}><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
 
-  {% assign pages_list = site.pages | sort:"weight" %}
-  {% assign group = 'navigation' %}
-  {% include pages_list.html %}
-</ul>
+    {% assign pages_list = site.pages | sort:"weight" %}
+    {% assign group = 'navigation' %}
+    {% include pages_list.html %}
+  </ul>
 </aside>

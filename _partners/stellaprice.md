@@ -1,11 +1,15 @@
 ---
 active: true
-title: Stella Price and Associates
-category: realestate
-image_path: ''
-subcategory: Agent
+title: 'Stella Price and Associates'
+subtitle: Personal Real Estate Corporation
+phoneCell: '604-833-7725'
+phoneOffice: '604-415-2908'
+email: 'stella@stellaprice.com'
+category: realestateagents
+name: 'Stella Price'
+image_path: 'sutton.png'
 color: '#c101c4'
-website: 'http://stellaprice.com'
+website: 'stellaprice.com'
 address: '102-403 North Road, Coquitlam, BC'
 ---
 
