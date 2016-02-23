@@ -1,4 +1,5 @@
 ---
 title: Events
-category: business
+category: _none
 ---
+
