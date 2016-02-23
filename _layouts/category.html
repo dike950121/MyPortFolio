@@ -17,8 +17,8 @@ layout: default
           <div class="row">
             <div class="col-sm-7">
               <ul>
-                {% if item.subtitle %}<li class="partner-subtitle">{{ item.subtitle }}</li>{% endif %}
                 {% if item.name %}<li class="uc">{{ item.name }}</li>{% endif %}
+                {% if item.subtitle %}<li class="partner-subtitle">{{ item.subtitle }}</li>{% endif %}
                 {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
                 {% if item.specialty %}<li>{{ item.specialty }}</li>{% endif %}
                 {% if item.phoneOffice || item.phoneCell %}<li>{% if item.phoneOffice %}O. {{ item.phoneOffice }}{% endif %} &nbsp;&nbsp;&nbsp;{% if item.phoneCell %}C. {{ item.phoneCell }}{% endif %}</li>{% endif %}

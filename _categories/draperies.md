@@ -1,5 +1,0 @@
----
-title: Draperies
-category: interiordesign
----
-

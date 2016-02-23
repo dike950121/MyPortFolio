@@ -1,4 +1,4 @@
 ---
 title: Notaries
-category: business
+category: legal
 ---

@@ -1,4 +1,4 @@
 ---
-title: Printing
+title: Printers
 category: business
 ---
