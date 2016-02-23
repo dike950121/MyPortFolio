@@ -21,9 +21,16 @@
         <ul>
           {% assign categories = site.categories | where:'parent', '' %}
           {% for category in categories %}
+
             {% assign categoryTitle = category.title | downcase | replace:" ","" %}
-            <li {% if category.subcategories %}class="accordion"{% endif %}{% if category.title == page.title %}class="active"{% endif %}>
-              <a {% if category.subcategories %}class="accordion-toggle{% if page.parent == categoryTitle %} active{% endif %}"{% else %}href="/categories/{{ categoryTitle }}"{% endif %}>{{ category.title }} <span class="chevron"></span></a>
+
+            {% assign subcategories = site.categories | where:'parent',categoryTitle %}
+            {% for subcategory in subcategories %}
+              {% assign hasSubcategories = true %}
+            {% endfor %}
+
+            <li {% if hasSubcategories %}class="accordion"{% endif %}{% if category.title == page.title %}class="active"{% endif %}>
+              <a {% if hasSubcategories %}class="accordion-toggle{% if page.parent == categoryTitle %} active{% endif %}"{% else %}href="/categories/{{ categoryTitle }}"{% endif %}>{{ category.title }} <span class="chevron"></span></a>
               <ul class="accordion-content {% if page.parent == categoryTitle %}active{% endif %}">
                 {% assign subcategories = site.categories | where:'parent', categoryTitle %}
                 {% for subcategory in subcategories  %}
