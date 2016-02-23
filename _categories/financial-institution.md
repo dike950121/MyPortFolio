@@ -1,4 +1,5 @@
 ---
 title: Financial institution
-category: business
+category: finance
 ---
+
