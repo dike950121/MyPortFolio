@@ -1,5 +1,5 @@
 ---
-title: Mortgage Brokers
+title: Private Lendings
 category: finance
 ---
 
