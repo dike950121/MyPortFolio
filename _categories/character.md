@@ -1,3 +1,3 @@
 ---
-title: Character
+title: 'Character Entertainers'
 ---
