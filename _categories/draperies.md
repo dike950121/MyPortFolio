@@ -1,4 +1,5 @@
 ---
 title: Draperies
-category: business
+category: interiordesign
 ---
+
