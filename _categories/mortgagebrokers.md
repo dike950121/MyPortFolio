@@ -1,4 +1,4 @@
 ---
 title: Mortgage Brokers
-parent: realestate
+category: realestate
 ---

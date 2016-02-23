@@ -1,4 +1,4 @@
 ---
 title: Home Inspectors
-parent: realestate
+category: realestate
 ---

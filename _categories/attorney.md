@@ -1,4 +1,4 @@
 ---
 title: Attorney
-parent: legal
+category: legal
 ---

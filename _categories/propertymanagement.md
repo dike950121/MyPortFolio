@@ -1,4 +1,4 @@
 ---
 title: Property Management
-parent: realestate
+category: realestate
 ---

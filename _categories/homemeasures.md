@@ -1,4 +1,4 @@
 ---
 title: Home Measures
-parent: realestate
+category: realestate
 ---
