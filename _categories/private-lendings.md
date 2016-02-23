@@ -1,4 +1,5 @@
 ---
-title: private lendings
-category: business
+title: Private Lendings
+category: finance
 ---
+
