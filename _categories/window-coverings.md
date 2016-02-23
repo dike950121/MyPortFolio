@@ -1,4 +1,5 @@
 ---
 title: Window Coverings
-category: business
+category: interiordesign
 ---
+
