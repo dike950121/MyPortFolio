@@ -1,4 +1,5 @@
 ---
 title: Interior designers
-category: business
+category: interiordesign
 ---
+
