@@ -5,7 +5,7 @@ $(document).ready(function($) {
     $(this).toggleClass('active');
 
     //Expand or collapse this panel
-    $(this).next().slideToggle('fast');
+    $(this).next().slideToggle('fast').addClass('active');
 
     //Hide the other panels
     $('.nav .accordion-content .accordion-content').not($(this).next()).slideUp('fast');

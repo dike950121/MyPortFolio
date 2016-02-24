@@ -45,7 +45,7 @@ layout: default
           </div>
         </div>
         <div class="col-xs-12">
-          <hr>
+          <hr class="editor-link">
           {% assign partnerFilename = item.url | replace: '/', '' | replace: 'partners', '' | replace: '.html', '.md' %}
           <a class="btn btn-block btn-warning editor-link" href="cloudcannon:collections/_partners/{{ partnerFilename }}">Edit partner</a>
         </div>

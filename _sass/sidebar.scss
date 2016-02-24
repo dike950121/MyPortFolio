@@ -1,5 +1,7 @@
 .sidebar-left{
   background-color: $white;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .sidebar-left-inner{
@@ -62,7 +64,7 @@
       @include user-select(none);
 
       a{
-        color: $black;
+        color: $brand-primary;
         display: block;
         padding: 10px;
       }
@@ -71,6 +73,16 @@
       ul{
         list-style-type: none;
         padding-left: 15px;
+
+        .accordion-toggle.active{
+          color: $black;
+        }
+
+        &.active{
+          li a{
+            color: $black;
+          }
+        }
 
         li a{
           &:hover{

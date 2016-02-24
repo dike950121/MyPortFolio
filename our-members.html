@@ -6,7 +6,7 @@ group: navigation
 weight: 2
 ---
 
-<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit partners</a></p>
+<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit members</a></p>
 
 {% assign collection = site.partners %}
 
@@ -27,6 +27,10 @@ weight: 2
     </div>
   {% endfor %}
   </div>
+  <div class="col-lg-4">
+    {% assign partnerFilename = item.url | replace: '/', '' | replace: 'partners', '' | replace: '.html', '.md' %}
+    <a class="btn btn-block btn-warning editor-link" href="cloudcannon:collections/_partners/{{ partnerFilename }}">Edit member</a>
+  </div>
 </div>
 
-<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit partners</a></p>
+<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit members</a></p>
