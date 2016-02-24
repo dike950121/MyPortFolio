@@ -5,7 +5,7 @@ layout: default
 {% assign filename = page.url | replace: '/', '' | replace: 'categories', '' | replace: '.html', '.md' %}
 <h1>{{ page.title }} <a class="btn btn-warning editor-link" href="cloudcannon:collections/_categories/{{ filename }}">Edit category</a></h1>
 
-<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add partner</a></p>
+<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit partners</a></p>
 
 {% assign pageCategory = page.title | downcase | replace:" ","" %}
 {% assign collection = site.partners | where:'category', pageCategory | sort: "weight" %}
@@ -55,4 +55,4 @@ layout: default
   {% endfor %}
 </ul>
 
-<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add partner</a></p>
+<p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit partners</a></p>
