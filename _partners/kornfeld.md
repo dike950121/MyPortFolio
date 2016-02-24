@@ -1,7 +1,7 @@
 ---
 active: true
 title: 'Kornfeld LLP'
-name: 'Shane D. Coblin'
+contactName: 'Shane D. Coblin'
 contactTitle: PARTNER-LITIGATION
 phoneOffice: '604-331-8300'
 email: 'scoblin@kornfeldllp.com'

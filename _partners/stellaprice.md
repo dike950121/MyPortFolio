@@ -6,7 +6,7 @@ phoneCell: '604-833-7725'
 phoneOffice: '604-415-2908'
 email: 'stella@stellaprice.com'
 category: realestateagents
-name: 'Stella Price'
+contactName: 'Stella Price'
 image_path: /images/sutton.png
 color: '#c101c4'
 website: 'stellaprice.com'

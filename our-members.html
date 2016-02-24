@@ -16,7 +16,7 @@ weight: 2
         <img class="img-responsive" src="{{ item.profile_image_path }}">
       </div>
       <div class="col-xs-10">
-        <h5><strong>{{ item.name }}</strong></h5>
+        <h5><strong>{{ item.contactName }}</strong></h5>
         <ul>
           {% if item.title %}<li class="uc">{{ item.title }}</li>{% endif %}
           {% if item.email %}<li><i class="fa fa-envelope"></i> <a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}
