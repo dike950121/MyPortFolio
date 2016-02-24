@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Blog post 3"
 ---
 
