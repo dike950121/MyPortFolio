@@ -6,7 +6,7 @@ contactTitle: PARTNER-LITIGATION
 phoneOffice: '604-331-8300'
 email: 'scoblin@kornfeldllp.com'
 category: attorney
-image_path: "kornfeldllp.png"
+image_path: /images/kornfeldllp.png
 color: '#35276b'
 subcategory: Corporate
 website: kornfeldllp.com

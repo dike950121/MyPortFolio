@@ -7,7 +7,7 @@ phoneOffice: '604-415-2908'
 email: 'stella@stellaprice.com'
 category: realestateagents
 name: 'Stella Price'
-image_path: 'sutton.png'
+image_path: /images/sutton.png
 color: '#c101c4'
 website: 'stellaprice.com'
 address: '102-403 North Road, Coquitlam, BC'
