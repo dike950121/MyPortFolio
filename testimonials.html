@@ -15,7 +15,7 @@ weight: 6
           <blockquote>
             <q>{{ testimonial.description }}</q>
             <footer>{{ testimonial.author }}</footer>
-            {% assign testimonialFilename = item.url | replace: '/', '' | replace: 'testimonials', '' | replace: '.html', '.md' %}
+            {% assign testimonialFilename = testimonial.url | replace: '/', '' | replace: 'testimonials', '' | replace: '.html', '.md' %}
             <a class="btn btn-warning editor-link" href="cloudcannon:collections/_testimonials/{{ testimonialFilename }}">Edit testimonial</a>
           </blockquote>
       </div>
