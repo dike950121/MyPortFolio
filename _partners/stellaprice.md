@@ -11,5 +11,5 @@ image_path: /images/sutton.png
 color: '#c101c4'
 website: 'stellaprice.com'
 address: '102-403 North Road, Coquitlam, BC'
-profile_image: 'person.png'
+profile_image_path: /images/person.png
 ---

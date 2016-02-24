@@ -11,5 +11,5 @@ image_path: /images/ferrari.png
 color: '#ff0000'
 website: 'fmov.ca'
 address: '1860 Burrard Street, Vancouver, BC'
-profile_image: 'person.png'
+profile_image_path: /images/person.png
 ---

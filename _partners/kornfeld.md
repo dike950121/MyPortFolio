@@ -10,5 +10,5 @@ image_path: /images/kornfeldllp.png
 color: '#35276b'
 subcategory: Corporate
 website: kornfeldllp.com
-profile_image: 'person.png'
+profile_image_path: /images/person.png
 ---
