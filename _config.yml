@@ -29,6 +29,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
       type: "categories"
     values:
       layout: "category"
