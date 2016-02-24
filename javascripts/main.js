@@ -8,7 +8,8 @@ $(document).ready(function($) {
     $(this).next().slideToggle('fast');
 
     //Hide the other panels
-    // $('.accordion-content').not($(this).next()).slideUp('fast');
+    $('.nav .accordion-content .accordion-content').not($(this).next()).slideUp('fast');
+    $('.nav .accordion-content .accordion-toggle').not($(this)).removeClass('active');
   });
 
 
