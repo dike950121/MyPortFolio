@@ -23,7 +23,7 @@ layout: default
                 <ul>
                   {% if item.contactName %}<li class="uc">{{ item.contactName }}</li>{% endif %}
                   {% if item.subtitle %}<li class="partner-subtitle">{{ item.subtitle }}</li>{% endif %}
-                  {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
+                  {% if item.contactTitle %}<li class="small-margin-bottom">{{ item.contactTitle }}</li>{% endif %}
                   {% if item.specialty %}<li>{{ item.specialty }}</li>{% endif %}
                   {% if item.phoneOffice || item.phoneCell %}<li>{% if item.phoneOffice %}O. {{ item.phoneOffice }}{% endif %} &nbsp;&nbsp;&nbsp;{% if item.phoneCell %}C. {{ item.phoneCell }}{% endif %}</li>{% endif %}
                   {% if item.email %}<li><a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}

@@ -17,7 +17,7 @@ weight: 2
       <div class="col-xs-2">
         <img class="img-responsive" src="{{ item.profile_image_path }}">
       </div>
-      <div class="col-xs-10">
+      <div class="col-xs-8">
         <h5 class="no-spacing"><strong>{{ item.contactName }}</strong></h5>
         <ul>
           {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
@@ -25,12 +25,12 @@ weight: 2
           {% if item.email %}<li><i class="fa fa-envelope"></i> <a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}
         </ul>
       </div>
+      <div class="col-xs-2">
+        {% assign partnerFilename = item.url | replace: '/', '' | replace: 'partners', '' | replace: '.html', '.md' %}
+        <a class="btn btn-block btn-warning editor-link" href="cloudcannon:collections/_partners/{{ partnerFilename }}">Edit member</a>
+      </div>
     </div>
   {% endfor %}
-  </div>
-  <div class="col-lg-4">
-    {% assign partnerFilename = item.url | replace: '/', '' | replace: 'partners', '' | replace: '.html', '.md' %}
-    <a class="btn btn-block btn-warning editor-link" href="cloudcannon:collections/_partners/{{ partnerFilename }}">Edit member</a>
   </div>
 </div>
 
