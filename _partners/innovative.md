@@ -8,6 +8,7 @@ name: 'Sharon Davis'
 email: 'sharon@myimsmortgage.com'
 image_path: 'dominion-logo.jpg'
 color: '#0f2d7e'
-subcategory: Mortgage Broker
+category: attorney
 website: imsdavis.ca
+profile_image: 'person.png'
 ---

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Testimonials
+permalink: /testimonials/
+group: navigation
+weight: 6
+---
+
+<div class="testimonials">
+  <div class="row">
+      {% for testimonial in site.testimonials %}
+    <div class="col-lg-8">
+        <blockquote>
+          <q>{{ testimonial.description }}</q>
+          <footer>{{ testimonial.author }}</footer>
+        </blockquote>
+    </div>
+      {% endfor %}
+  </div>
+</div>

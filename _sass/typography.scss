@@ -22,12 +22,3 @@
 q {
   display: inline;
 }
-
-q:before,
-blockquote:before {
-  content: open-quote;
-}
-q:after,
-blockquote:after {
-  content: no-close-quote;
-}

@@ -59,11 +59,12 @@
 
     li{
       text-transform: uppercase;
+      @include user-select(none);
 
       a{
         color: $black;
         display: block;
-        padding: 10px 0;
+        padding: 10px;
       }
 
       // sub nav
@@ -72,8 +73,6 @@
         padding-left: 15px;
 
         li a{
-          padding-left: 10px;
-
           &:hover{
             background-color: #f8f8f8;
           }

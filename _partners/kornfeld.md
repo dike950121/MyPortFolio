@@ -5,11 +5,10 @@ name: 'Shane D. Coblin'
 contactTitle: PARTNER-LITIGATION
 phoneOffice: '604-331-8300'
 email: 'scoblin@kornfeldllp.com'
-category: legal
+category: attorney
 image_path: "kornfeldllp.png"
 color: '#35276b'
 subcategory: Corporate
 website: kornfeldllp.com
+profile_image: 'person.png'
 ---
-
-The best of the best in Legal advice.

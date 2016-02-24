@@ -8,39 +8,41 @@ layout: default
 {% assign collection = site.partners | where:'category', pageCategory | sort: "weight" %}
 <ul class="partner-category-group">
   {% for item in collection %}
-  <li class="partner" style="border-color: {{ item.color }};">
-    <div class="partner-bg" style="background-color: {{ item.color }};"></div>
-    <div class="row">
-      <div class="col-sm-8">
-        <h3 class="partner-title">{{ item.title }}</h3>
-        <div class="partner-details">
-          <div class="row">
-            <div class="col-sm-7">
-              <ul>
-                {% if item.name %}<li class="uc">{{ item.name }}</li>{% endif %}
-                {% if item.subtitle %}<li class="partner-subtitle">{{ item.subtitle }}</li>{% endif %}
-                {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
-                {% if item.specialty %}<li>{{ item.specialty }}</li>{% endif %}
-                {% if item.phoneOffice || item.phoneCell %}<li>{% if item.phoneOffice %}O. {{ item.phoneOffice }}{% endif %} &nbsp;&nbsp;&nbsp;{% if item.phoneCell %}C. {{ item.phoneCell }}{% endif %}</li>{% endif %}
-                {% if item.email %}<li><a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}
-              </ul>
-            </div>
-            <div class="col-sm-5">
-              <!-- <ul>
-                <li></li>
-              </ul> -->
+    {% if item.active %}
+    <li class="partner" style="border-color: {{ item.color }};">
+      <div class="partner-bg" style="background-color: {{ item.color }};"></div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3 class="partner-title">{{ item.title }}</h3>
+          <div class="partner-details">
+            <div class="row">
+              <div class="col-sm-7">
+                <ul>
+                  {% if item.name %}<li class="uc">{{ item.name }}</li>{% endif %}
+                  {% if item.subtitle %}<li class="partner-subtitle">{{ item.subtitle }}</li>{% endif %}
+                  {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
+                  {% if item.specialty %}<li>{{ item.specialty }}</li>{% endif %}
+                  {% if item.phoneOffice || item.phoneCell %}<li>{% if item.phoneOffice %}O. {{ item.phoneOffice }}{% endif %} &nbsp;&nbsp;&nbsp;{% if item.phoneCell %}C. {{ item.phoneCell }}{% endif %}</li>{% endif %}
+                  {% if item.email %}<li><a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <!-- <ul>
+                  <li></li>
+                </ul> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-4 text-center">
-        <a target="_blank" href="{{ item.website }}"><img class="partner-image" src="/images/{{ item.image_path }}"></a>
-        <div class="partner-ctas">
-          <a class="btn btn-default partner-cta" style="background-color: {{ item.color }}" target="_blank" href="http://{{ item.website }}"><span>{{ item.website }}</span></a>
-          <a class="btn btn-default partner-cta-email" style="border-color: {{ item.color }}" href="mailto:{{ item.email }}"><span style="color: {{ item.color }};"><i class="fa fa-envelope"></i> Email</span></a>
+        <div class="col-sm-4 text-center">
+          <a target="_blank" href="{{ item.website }}"><img class="partner-image" src="/images/{{ item.image_path }}"></a>
+          <div class="partner-ctas">
+            <a class="btn btn-default partner-cta" style="background-color: {{ item.color }}" target="_blank" href="http://{{ item.website }}"><span>{{ item.website }}</span></a>
+            <a class="btn btn-default partner-cta-email" style="border-color: {{ item.color }}" href="mailto:{{ item.email }}"><span style="color: {{ item.color }};"><i class="fa fa-envelope"></i> Email</span></a>
+          </div>
         </div>
       </div>
-    </div>
-  </li>
+    </li>
+    {% endif %}
   {% endfor %}
 </ul>

@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<div class="container">
-  <div>
-    <header>
-      <div class="page-header">
-        <h1>{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small></h1>
-      </div>
-    </header>
-    <article>
+<h1>{{ page.title }}</h1>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div>
+      <p><a href="/blog/">&laquo; Back to blog</a></p>
+      <small>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+    </div>
+
+    <article class="post-content">
       {{ content }}
     </article>
   </div>

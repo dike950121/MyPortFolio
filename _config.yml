@@ -22,6 +22,8 @@ collections:
     output: true
   categories:
     output: true
+  testimonials:
+    output: false
 
 defaults:
   -

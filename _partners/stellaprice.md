@@ -11,6 +11,5 @@ image_path: 'sutton.png'
 color: '#c101c4'
 website: 'stellaprice.com'
 address: '102-403 North Road, Coquitlam, BC'
+profile_image: 'person.png'
 ---
-
-The best of the best in Real Estate.
