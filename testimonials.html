@@ -11,12 +11,14 @@ weight: 6
 <div class="testimonials">
   <div class="row">
       {% for testimonial in site.testimonials %}
-    <div class="col-lg-8">
-        <blockquote>
-          <q>{{ testimonial.description }}</q>
-          <footer>{{ testimonial.author }}</footer>
-        </blockquote>
-    </div>
+      <div class="col-lg-8">
+          <blockquote>
+            <q>{{ testimonial.description }}</q>
+            <footer>{{ testimonial.author }}</footer>
+            {% assign testimonialFilename = item.url | replace: '/', '' | replace: 'testimonials', '' | replace: '.html', '.md' %}
+            <a class="btn btn-warning editor-link" href="cloudcannon:collections/_testimonials/{{ partnerFilename }}">Edit testimonial</a>
+          </blockquote>
+      </div>
       {% endfor %}
   </div>
 </div>
