@@ -18,4 +18,4 @@ layout: default
 </div>
 
 {% assign postFilename = post.url | replace: '/', '' | replace: 'posts', '' | replace: '.html', '.md' %}
-<a class="btn btn-warning editor-link" href="cloudcannon:collections/_posts/{{ post.date | date: '%Y-%m-%d'}}-{{ postFilename }}.md">Edit testimonial</a>
+<a class="btn btn-block btn-warning editor-link" href="cloudcannon:collections/_posts/{{ post.date | date: '%Y-%m-%d'}}-{{ postFilename }}.md">Edit testimonial</a>
