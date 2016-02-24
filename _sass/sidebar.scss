@@ -75,16 +75,18 @@
         padding-left: 15px;
 
         .accordion-toggle.active{
-          color: $black;
+          color: $brand-primary;
+          font-weight: 600;
         }
 
         &.active{
           li a{
-            color: $black;
+            color: $brand-primary;
           }
         }
 
         li a{
+          color: $black;
           &:hover{
             background-color: #f8f8f8;
           }

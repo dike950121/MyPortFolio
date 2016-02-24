@@ -1,12 +1,12 @@
 ---
 active: true
 title: 'Stella Price and Associates'
-subtitle: Personal Real Estate Corporation
 phoneCell: '604-833-7725'
 phoneOffice: '604-415-2908'
 email: 'stella@stellaprice.com'
 category: realestateagents
 contactName: 'Stella Price'
+contactTitle: Personal Real Estate Corporation
 image_path: /images/sutton.png
 color: '#c101c4'
 website: 'stellaprice.com'

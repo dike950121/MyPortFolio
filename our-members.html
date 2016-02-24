@@ -8,7 +8,7 @@ weight: 2
 
 <p><a class="btn btn-lg btn-success btn-block editor-link" href="cloudcannon:collections/_partners/">Add/edit members</a></p>
 
-{% assign collection = site.partners %}
+{% assign collection = site.partners | sort: "contactName" %}
 
 <div class="row our-members">
   <div class="col-lg-8">
@@ -18,8 +18,9 @@ weight: 2
         <img class="img-responsive" src="{{ item.profile_image_path }}">
       </div>
       <div class="col-xs-10">
-        <h5><strong>{{ item.contactName }}</strong></h5>
+        <h5 class="no-spacing"><strong>{{ item.contactName }}</strong></h5>
         <ul>
+          {% if item.contactTitle %}<li>{{ item.contactTitle }}</li>{% endif %}
           {% if item.title %}<li class="uc">{{ item.title }}</li>{% endif %}
           {% if item.email %}<li><i class="fa fa-envelope"></i> <a href="mailto:{{ item.email }}">{{ item.email }}</a></li>{% endif %}
         </ul>

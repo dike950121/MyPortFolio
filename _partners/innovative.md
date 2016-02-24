@@ -5,6 +5,7 @@ category: mortgagebrokers
 phoneOffice: 604-220-2343 ext. 101
 phoneCell: 604-220-2343
 contactName: Sharon Davis
+contactTitle: Mortgage Planner/Partner
 email: sharon@myimsmortgage.com
 image_path: /images/dominion-logo.jpg
 color: '#0f2d7e'
