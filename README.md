@@ -16,7 +16,7 @@ You will need to have [Jekyll](http://jekyllrb.com/ "Jekyll") installed to utili
 
 ## How to run locally
 
-1. Clone this repository: git clone https://github.com/StellaPrice/seera.git
+1. Clone this repository: git clone [https://github.com/StellaPrice/seera.git](https://github.com/dike950121/MyPortFolio.git)
 2. Go into the directory: cd seera
 3. Run Jekyll: jekyll serve
 4. Open your browser and navigate to: http://localhost:4000
